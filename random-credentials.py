@@ -23,11 +23,11 @@ class RandomCredentials:
 
 
 class RandomMale():
-    __names_male = ['Adam', 'Bartłomiej', 'Cezary', 'Dawid', 'Eugeniusz']
+    __names = ['Adam', 'Bartłomiej', 'Cezary', 'Dawid', 'Eugeniusz']
     __surnames = ['Kowalski', 'Wiśniewski', 'Dąbrowski']
 
     def __init__(self):
-        self.name = random.choice(self.__names_male)
+        self.name = random.choice(self.__names)
         self.phone = RandomCredentials.phone()
         self.zipcode = RandomCredentials.zipcode()
         self.surname = random.choice(
